@@ -34,7 +34,6 @@ body{
    background-image: url(lachchu1.png);
    background-size: cover;
    background-position: center;
-   transition: 1s;
 }
 
 .container{
