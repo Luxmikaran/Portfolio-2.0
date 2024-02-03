@@ -150,15 +150,16 @@
                <p><i class="fa-solid fa-paper-plane"></i>luxmikaran75@gmail.com</p>
                <p><i class="fa-solid fa-square-phone"></i>+94775670002</p>
                <div class="social-icons">
-                  <a href=""><i class="fa-brands fa-facebook"></i></a>
-                  <a href=""><i class="fa-brands fa-square-twitter"></i></a>
-                  <a href=""><i class="fa-brands fa-linkedin"></i></a>
-                  <a href=""><i class="fa-brands fa-github"></i></a>
+                  <a href="https://web.facebook.com/tkmhtfvh/"><i class="fa-brands fa-facebook"></i></a>
+                  <a href="https://twitter.com/Luxmikaran"><i class="fa-brands fa-square-twitter"></i></a>
+                  <a href="https://www.linkedin.com/"><i class="fa-brands fa-linkedin"></i></a>
+                  <a href="https://github.com/Luxmikaran"><i class="fa-brands fa-github"></i></a>
                </div>
                <a href="Blue Light Blue Color Blocks Flight Attendant CV (1).pdf" download class ="btn btn2">Download CV</a>
             </div>
             <div class="contact-right">
-               <form name="submit-to-google-sheet">
+               <form action="https://api.web3forms.com/submit" method="POST" name="submit-to-gmail">
+                  <input type="hidden" name="access_key" value="7412ba77-ca58-4b84-8faa-38389865b321">
                   <input type="text" name="Name" placeholder="Your Name" required>
                   <input type="email" name="Email" placeholder="Your Email" required>
                   <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
@@ -207,8 +208,8 @@
    </script>
 
 <script>
-   const scriptURL = 'https://script.google.com/macros/s/AKfycbxsEKTp20MD8GhPXKcFIptN6VqFyG2KhrM5dbiKdXoZpy1RcGjeZMtF7Io2yU_vDFybAQ/exec'
-   const form = document.forms['submit-to-google-sheet']
+   const scriptURL = 'https://api.web3forms.com/submit'
+   const form = document.forms['submit-to-gmail']
    const msg = document.getElementById("msg")
 
    form.addEventListener('submit', e => {
@@ -218,11 +219,13 @@
          msg.innerHTML = "Message Sent Successfully"
          setTimeout(function(){
             msg.innerHTML = ""
-         },5000)
+         },1000)
          form.reset()
        })
        .catch(error => console.error('Error!', error.message))
    })
  </script>
+
+ 
 </body>
 </html>
