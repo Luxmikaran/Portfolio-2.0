@@ -31,13 +31,13 @@ body{
 #header{
    width: 100%;
    height: 100vh;
-   background-image: url(lachchu1.png);
+   background-image: url(20240204_121755.jpg);
    background-size: cover;
    background-position: center;
 }
 
 .container{
-   padding: 10px 9%;
+   padding: 10px 10%;
 }
 nav{
    display: flex;
@@ -410,12 +410,11 @@ nav .fa-solid{
 @media screen and (max-width: 600px){
 
    #header{
-      background-image: url(lachchu.png);
-      background-position-x: -100px; 
+      background-image: url(20240204_121755.jpg); 
    }
  
    .header-text{
-      margin-top: 120%;
+      margin-top: 110%;
       font-size: 16px;
    }
    .header-text h1{
